@@ -28,3 +28,5 @@ of table names seperated by commas:
     rake FIXTURES="users,posts" db:serialize:save
 
 Copyright (c) 2007 [Jan Varwig], released under the MIT license
+
+[-_-]
