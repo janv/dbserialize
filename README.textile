@@ -54,4 +54,4 @@ of table names seperated by commas:
 
 h1. LEGAL
 
-Copyright (c) 2007 [Jan Varwig], released under the MIT license
+Copyright (c) 2007-2008 [Jan Varwig], released under the MIT license
