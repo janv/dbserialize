@@ -26,9 +26,9 @@ or get it from github through git
 You can keep it fresh with
 
 <pre>
-	git submodule init
-	 # or
-	git submodule update
+  git submodule init
+  # or
+  git submodule update
 </pre>
 
 h1. USAGE
