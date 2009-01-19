@@ -1,0 +1,57 @@
+h1. DBSERIALIZE
+
+Dbserialize provides two rake tasks to store your current environments database
+tables to Yaml fixtures in db/fixtures and to fill the database with these
+fixtures.
+
+That way it's possible to store sample data consistently in the repository and
+for all developers on a project to use common sample data instead of manually
+generating something on every developer machine or sending database dumps around
+via email.
+
+h1. INSTALL
+
+You can easily add it to your rails project (from your rails app root)
+
+<pre>
+  git submodule add git://github.com/janv/dbserialize.git vendor/plugins/dbserialize
+</pre>
+
+or get it from github through git
+
+<pre>
+  git clone git://github.com/sebastiandeutsch/smile-designer-smile.git
+</pre>
+
+You can keep it fresh with
+
+<pre>
+	git submodule init
+	 # or
+	git submodule update
+</pre>
+
+h1. USAGE
+
+To save your database to Yaml call
+
+<pre>
+  rake db:serialize:save
+</pre>
+    
+To resore the database from the fixtures call
+
+<pre>
+  rake db:serialize:load
+</pre>
+
+To only export certain tables, set the FIXTURES environment variable to a list
+of table names seperated by commas:
+
+<pre>
+  rake FIXTURES="users,posts" db:serialize:save
+</pre>
+
+h1. LEGAL
+
+Copyright (c) 2007 [Jan Varwig], released under the MIT license
