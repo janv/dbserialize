@@ -9,6 +9,8 @@ for all developers on a project to use common sample data instead of manually
 generating something on every developer machine or sending database dumps around
 via email.
 
+Please read on the "blog post":http://blog.9elements.com/?page_id=76.
+
 h1. INSTALL
 
 You can easily add it to your rails project (from your rails app root)
@@ -20,7 +22,7 @@ You can easily add it to your rails project (from your rails app root)
 or get it from github through git
 
 <pre>
-  git clone git://github.com/sebastiandeutsch/smile-designer-smile.git
+  git clone git://github.com/janv/dbserialize.git vendor/plugins/dbserialize
 </pre>
 
 You can keep it fresh with
@@ -49,9 +51,9 @@ To only export certain tables, set the FIXTURES environment variable to a list
 of table names seperated by commas:
 
 <pre>
-  rake FIXTURES="users,posts" db:serialize:save
+  FIXTURES="users,posts" rake db:serialize:sav
 </pre>
 
 h1. LEGAL
 
-Copyright (c) 2007-2008 [Jan Varwig], released under the MIT license
+Copyright (c) 2007-2009 "Jan Varwig":http://jan.varwig.org, released under the MIT license
